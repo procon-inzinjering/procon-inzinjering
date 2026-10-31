@@ -123,8 +123,8 @@
         <div class="contact-grid">
           <div class="contact-info reveal"><h3>Izgradimo dobru saradnju.</h3><p>Za upite, konsultacije i informacije o uslugama kontaktirajte ProCon Inžinjering.</p>
             <div class="contact-line"><span class="mini">⌖</span><div><strong>Lokacija</strong><span>Zenica, Bosna i Hercegovina</span></div></div>
-            <div class="contact-line"><span class="mini">✉</span><div><strong>E-mail</strong><span id="emailDisplay">procon.inzinjering@gmail.com</span></div></div>
-            <div class="contact-line"><span class="mini">☎</span><div><strong>Telefon</strong><span id="phoneDisplay">+387 6X XXX XXX</span></div></div>
+            <div class="contact-line"><span class="mini">✉</span><div><strong>E-mail</strong><span><a id="emailDisplay" href="mailto:proconinzinjering@outlook.com">proconinzinjering@outlook.com</a></span></div></div>
+            <div class="contact-line"><span class="mini">☎</span><div><strong>Telefon</strong><span><a id="phoneDisplay" href="tel:+38762586138">+387 62 586 138</a></span></div></div>
             <div class="contact-line"><span class="mini">◷</span><div><strong>Dostupnost</strong><span>Po dogovoru</span></div></div>
           </div>
           <form class="contact-form reveal" id="contactForm">
@@ -132,7 +132,7 @@
             <div class="form-row"><div class="field"><label for="service">Vrsta upita</label><select id="service" name="service"><option>Odaberite uslugu</option><option>Tehničko savjetovanje</option><option>Građevinska dokumentacija</option><option>Podrška na gradilištu</option><option>Stručni pregled / izvještaj</option><option>Ostalo</option></select></div><div class="field"><label for="phone">Telefon (opcionalno)</label><input id="phone" name="phone" placeholder="+387 ..."></div></div>
             <div class="field"><label for="message">Kratak opis projekta *</label><textarea id="message" name="message" required placeholder="Napišite nekoliko rečenica o projektu ili pitanju..."></textarea></div>
             <button class="btn" type="submit">Pripremi poruku <span>→</span></button>
-            <p class="form-note">Dugme otvara vašu e-mail aplikaciju s pripremljenom porukom. Prije objave zamijenite kontakt podatke stvarnim podacima obrta.</p>
+            <p class="form-note">Dugme otvara vašu e-mail aplikaciju s pripremljenom porukom.</p>
           </form>
         </div>
       </div>
@@ -140,8 +140,7 @@
   </main>
   <footer><div class="container footer-row"><div><div class="footer-brand">ProCon INŽINJERING</div><div>© <span id="year"></span> ProCon Inžinjering. Sva prava zadržana.</div></div><div class="footer-links"><a href="#usluge">Usluge</a><a href="#o-nama">O nama</a><a href="#kontakt">Kontakt</a><a class="backtop" href="#pocetna">Na vrh ↑</a></div></div></footer>
   <script>
-    // PRIJE OBJAVE: izmijenite EMAIL i TELEFON prema stvarnim podacima.
-    const EMAIL = "procon.inzinjering@gmail.com";
+    const EMAIL = "proconinzinjering@outlook.com";
     const menuBtn = document.getElementById("menuBtn");
     const nav = document.getElementById("mainNav");
     menuBtn.addEventListener("click", () => { const open = nav.classList.toggle("open"); menuBtn.setAttribute("aria-expanded", open); menuBtn.textContent = open ? "×" : "☰"; });
